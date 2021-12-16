@@ -1,0 +1,36 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { Text } from "../Text"
+import { FlexBox } from '.';
+
+<Meta title="Components/FlexBox" component={FlexBox} />
+
+export const Template = (args) => <FlexBox {...args} />;
+
+<Story
+  name="row"
+  args={{
+    children: [
+      <Text mx={1}>Text 1</Text>,
+      <Text mx={1}>Text 2</Text>,
+      <Text mx={1}>Text 3</Text>,
+      <Text mx={1}>Text 4</Text>,
+    ]
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name="column"
+  args={{
+    flexDirection: "column",
+    children: [
+      <Text>Text 1</Text>,
+      <Text>Text 2</Text>,
+      <Text>Text 3</Text>,
+      <Text>Text 4</Text>,
+    ]
+  }}
+>
+  {Template.bind({})}
+</Story>

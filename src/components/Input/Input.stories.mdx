@@ -1,0 +1,15 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { Input } from '.';
+
+<Meta title="Components/Input" component={Input} />
+
+export const Template = (args) => <Input {...args} />;
+
+<Story
+  name="Input"
+  args={{
+    placeholder: "Enter something...",
+  }}
+>
+  {Template.bind({})}
+</Story>

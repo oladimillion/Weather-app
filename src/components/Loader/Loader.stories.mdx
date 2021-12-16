@@ -1,0 +1,13 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { Loader } from '.';
+
+<Meta title="Components/Loader" component={Loader} />
+
+export const Template = (args) => <Loader {...args} />;
+
+<Story
+  name="Loader"
+  args={{}}
+>
+  {Template.bind({})}
+</Story>

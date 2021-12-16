@@ -1,0 +1,16 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { Icon } from '.';
+
+<Meta title="Components/Icon" component={Icon} />
+
+export const Template = (args) => <Icon {...args} />;
+
+<Story
+  name="Icon"
+  args={{
+    color: "green.700",
+    icon: "industry",
+  }}
+>
+  {Template.bind({})}
+</Story>

@@ -1,0 +1,15 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { lorem } from "../utils/lorem"
+import { Portal } from '.';
+
+<Meta title="Components/Portal" component={Portal} />
+
+export const Template = (args) => <Portal {...args} />;
+
+<Story
+  name="Portal"
+  args={{
+    children: <Text>{lorem}</Text>
+  }}>
+  {Template.bind({})}
+</Story>

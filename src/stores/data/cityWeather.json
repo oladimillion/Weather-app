@@ -1,0 +1,27 @@
+{
+  "location": {
+    "name": "Lagos",
+    "country": "Nigeria",
+    "region": "Lagos",
+    "lat": "11.996",
+    "lon": "8.517",
+    "timezone_id": "Africa/Lagos",
+    "localtime": "2021-12-14 17:03"
+  },
+  "current": {
+    "temperature": 33,
+    "weather_icons": [
+      "https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png"
+    ],
+    "weather_descriptions": [
+      "Sunny"
+    ],
+    "wind_speed": 17,
+    "pressure": 1008,
+    "humidity": 9,
+    "cloudcover": 0,
+    "uv_index": 8,
+    "visibility": 10
+  },
+  "notes": []
+}

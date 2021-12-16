@@ -1,0 +1,16 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { lorem } from "../utils/lorem"
+import { Pane } from '.';
+
+<Meta title="Components/Pane" component={Pane} />
+
+export const Template = (args) => <Pane {...args} />;
+
+<Story
+  name="Pane"
+  args={{
+    p: 3, 
+    children: lorem 
+  }}>
+  {Template.bind({})}
+</Story>

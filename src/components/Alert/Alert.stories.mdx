@@ -1,0 +1,28 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { Alert } from '.';
+
+<Meta title="Components/Alert" component={Alert} />
+
+export const Template = (args) => <Alert {...args} />;
+
+<Story
+  name="success"
+  args={{ 
+    variant: "success", 
+    children: "Success Alert",
+    remove: () => {},
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name="error"
+  args={{ 
+    variant: "error", 
+    children: "Success Error",
+    remove: () => {},
+  }}
+>
+  {Template.bind({})}
+</Story>

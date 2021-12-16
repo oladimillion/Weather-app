@@ -1,0 +1,12 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { Bookmark } from '.';
+
+<Meta title="Components/Bookmark" component={Bookmark} />
+
+export const Template = (args) => <Bookmark {...args} />;
+
+<Story
+  name="Bookmark"
+  args={{ marked: true }}>
+  {Template.bind({})}
+</Story>

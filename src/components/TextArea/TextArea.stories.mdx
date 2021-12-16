@@ -1,0 +1,15 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { TextArea } from '.';
+
+<Meta title="Components/TextArea" component={TextArea} />
+
+export const Template = (args) => <TextArea {...args} />;
+
+<Story
+  name="TextArea"
+  args={{
+    placeholder: "Enter something...",
+  }}
+>
+  {Template.bind({})}
+</Story>

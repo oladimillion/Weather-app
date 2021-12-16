@@ -1,0 +1,17 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { Image } from '.';
+
+<Meta title="Components/Image" component={Image} />
+
+export const Template = (args) => <Image {...args} />;
+
+<Story
+  name="Image"
+  args={{
+    width: "200px",
+    height: "200px",
+    src: "https://images.pexels.com/photos/9544524/pexels-photo-9544524.jpeg?cs=srgb&dl=pexels-arkhod-9544524.jpg&fm=jpg",
+  }}
+>
+  {Template.bind({})}
+</Story>

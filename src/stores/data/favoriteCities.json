@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Tokyo",
+    "region": "Tokyo",
+    "isFavorite": true,
+    "country": "Japan"
+  },
+  {
+    "name": "Delhi",
+    "region": "Delhi",
+    "isFavorite": true,
+    "country": "India"
+  },
+  {
+    "name": "Shanghai",
+    "region": "Shanghai",
+    "isFavorite": true,
+    "country": "China"
+  },
+  {
+    "name": "Sao Paulo",
+    "region": "Sao Paulo",
+    "isFavorite": true,
+    "country": "Brazil"
+  },
+  {
+    "name": "Mexico City",
+    "region": "The Federal District",
+    "isFavorite": true,
+    "country": "Mexico"
+  },
+  {
+    "name": "Cairo",
+    "region": "Al Qahirah",
+    "isFavorite": true,
+    "country": "Egypt"
+  },
+  {
+    "name": "Mumbai",
+    "region": "Maharashtra",
+    "isFavorite": true,
+    "country": "India"
+  },
+  {
+    "name": "Beijing",
+    "region": "Beijing",
+    "isFavorite": true,
+    "country": "China"
+  },
+  {
+    "name": "Kolkata",
+    "region": "West Bengal",
+    "isFavorite": true,
+    "country": "India"
+  },
+  {
+    "name": "Osaka-Shi",
+    "region": "Osaka",
+    "isFavorite": true,
+    "country": "Japan"
+  },
+  {
+    "name": "New York",
+    "region": "New York",
+    "isFavorite": true,
+    "country": "United States"
+  },
+  {
+    "name": "Karachi",
+    "region": "Sindh",
+    "isFavorite": true,
+    "country": "Pakistan"
+  },
+  {
+    "name": "Buenos Aires",
+    "region": "Distrito Federal",
+    "isFavorite": true,
+    "country": "Argentina"
+  },
+  {
+    "name": "Chongqing",
+    "region": "Chongqing",
+    "isFavorite": true,
+    "country": "China"
+  },
+  {
+    "name": "Istanbul",
+    "region": "Istanbul",
+    "isFavorite": true,
+    "country": "Turkey"
+  }
+] 
