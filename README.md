@@ -8,6 +8,10 @@ An application where you get any city's weather detail
 
 `npm install`
 
+### Run husky prepare
+
+`npm run prepare`
+
 ### Run development server
 
 `npm run start`
