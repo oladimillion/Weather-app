@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7cabe1b8-1cfd-4217-b6ca-760996fa4ae4/deploy-status)](https://app.netlify.com/sites/dcs-weather-app/deploys)
+
 ## Weather App
 
 An application where you can get cities' weather information
@@ -42,4 +44,4 @@ An application where you can get cities' weather information
 
 ### Deployed App
 
-https://weather-app.netlify.app/
+https://dcs-weather-app.netlify.app/

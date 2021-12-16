@@ -75,7 +75,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new Dotenv(),
+    new Dotenv({ systemvars: isProduction }),
     new HtmlWebpackPlugin({
       template: "src/public/index.html",
     }),
