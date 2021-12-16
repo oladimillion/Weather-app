@@ -1,19 +1,11 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import React from "react";
+import { ThemeProvider } from "styled-components";
 import { BrowserRouter } from "react-router-dom";
-import theme from "../src/theme"
+import theme from "../src/theme";
 
 export const decorators = [
-  (Story) => (
-    <ThemeProvider theme={theme}>
-      {Story()}
-    </ThemeProvider>
-  ),
-  (Story) => (
-    <BrowserRouter>
-      {Story()}
-    </BrowserRouter>
-  ),
+  (Story) => <ThemeProvider theme={theme}>{Story()}</ThemeProvider>,
+  (Story) => <BrowserRouter>{Story()}</BrowserRouter>,
 ];
 
 export const parameters = {
@@ -24,4 +16,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};

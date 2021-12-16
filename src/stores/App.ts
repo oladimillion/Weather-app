@@ -5,8 +5,8 @@ import { IAppStore } from "./types";
 export class App extends Store implements IAppStore {
   static key = "app";
 
-  alert: IAppStore["alert"] = {}
-  dialog: IAppStore["dialog"] = {}
+  alert: IAppStore["alert"] = {};
+  dialog: IAppStore["dialog"] = {};
 
   constructor() {
     super(App.key);
@@ -19,10 +19,10 @@ export class App extends Store implements IAppStore {
   }
 
   setDialog = (dialog: IAppStore["dialog"] = {}) => {
-    this.dialog = dialog
+    this.dialog = dialog;
   };
 
   setAlert = (alert: IAppStore["alert"] = {}) => {
-    this.alert = alert
+    this.alert = alert;
   };
 }

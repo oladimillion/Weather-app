@@ -1,24 +1,24 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link as BaseLink } from 'react-router-dom'
-import { Text } from '../Text'
+import React from "react";
+import styled from "styled-components";
+import { Link as BaseLink } from "react-router-dom";
+import { Text } from "../Text";
 
 const RouterLink: any = styled(BaseLink)`
   ${Text} {
   } ;
-`
+`;
 
-RouterLink.displayName = 'RouterLink'
+RouterLink.displayName = "RouterLink";
 
 RouterLink.defaultProps = {
-  to: '',
-}
+  to: "",
+};
 
 const ExternalLink: any = styled(Text).attrs(() => ({
-  as: 'a'
-}))``
+  as: "a",
+}))``;
 
-ExternalLink.displayName = 'ExternalLink'
+ExternalLink.displayName = "ExternalLink";
 
 type Props = {
   href?: string | null;
@@ -28,31 +28,31 @@ type Props = {
   to?: string;
   children?: React.ReactNode;
   external?: boolean;
-}
-
+};
 
 ExternalLink.defaultProps = {
   href: null,
-  as: 'a',
-  target: '_blank',
-  rel: 'noreferrer noopener',
-}
+  as: "a",
+  target: "_blank",
+  rel: "noreferrer noopener",
+};
 
 export const Link = (props: Props) => {
-  const { to, children, external, href, ...rest } = props
+  const { to, children, external, href, ...rest } = props;
   return external ? (
-    <ExternalLink {...rest} href={href}>{children || href}</ExternalLink>
+    <ExternalLink {...rest} href={href}>
+      {children || href}
+    </ExternalLink>
   ) : (
     <RouterLink to={to} {...rest}>
       {children || to}
     </RouterLink>
-  )
-}
+  );
+};
 
 Link.defaultProps = {
   href: null,
-  to: '',
+  to: "",
   children: null,
   external: false,
-}
-
+};

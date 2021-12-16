@@ -2,9 +2,7 @@
 
 An application where you get any city's weather detail
 
-
 ### Update `.env` with variables from `.env_example`
-
 
 ### Install dependencies
 
@@ -29,7 +27,6 @@ An application where you get any city's weather detail
 ### Prettify the codebase using below command
 
 `npm run prettify`
-
 
 ### Deployed App
 

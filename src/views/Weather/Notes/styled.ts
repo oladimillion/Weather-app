@@ -1,11 +1,10 @@
-import styled from "styled-components"
-import { List as BaseList } from "../../../components/List"
-import { Text } from "../../../components/Text"
-import { FontAwesomeIcon } from "../../../components/Icon"
-import { TextArea as BaseTextArea } from "../../../components/TextArea"
-import { Button as BaseButton } from "../../../components/Button"
-import { themeGet } from "../../../helpers"
-
+import styled from "styled-components";
+import { List as BaseList } from "../../../components/List";
+import { Text } from "../../../components/Text";
+import { FontAwesomeIcon } from "../../../components/Icon";
+import { TextArea as BaseTextArea } from "../../../components/TextArea";
+import { Button as BaseButton } from "../../../components/Button";
+import { themeGet } from "../../../helpers";
 
 export const List = styled(BaseList)`
   height: fit-content;
@@ -40,7 +39,7 @@ export const List = styled(BaseList)`
       }
     }
   }
-`
+`;
 
 export const TextArea = styled(BaseTextArea)`
   resize: vertical;
@@ -51,8 +50,6 @@ export const TextArea = styled(BaseTextArea)`
   border-radius: ${themeGet("radii.1")};
   padding: ${themeGet("space.1")};
   min-height: 100px;
-`
+`;
 
-export const Button = styled(BaseButton)`
-
-`
+export const Button = styled(BaseButton)``;

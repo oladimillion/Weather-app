@@ -9,5 +9,5 @@ export const withSuspense = (WrappedComponent: ComponentType<any>) => {
     </React.Suspense>
   );
   Suspense.displayName = `withSuspense(${getDisplayName(WrappedComponent)})`;
-  return Suspense
+  return Suspense;
 };

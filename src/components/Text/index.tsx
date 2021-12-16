@@ -1,24 +1,43 @@
-import styled from 'styled-components'
-import { system, shadow, layout, space, typography, color, ShadowProps, LayoutProps, SpaceProps, TypographyProps, ColorProps } from 'styled-system'
+import styled from "styled-components";
+import {
+  system,
+  shadow,
+  layout,
+  space,
+  typography,
+  color,
+  ShadowProps,
+  LayoutProps,
+  SpaceProps,
+  TypographyProps,
+  ColorProps,
+} from "styled-system";
 
 const whiteSpace = system({
   // @ts-ignore
-  prop: 'whiteSpace',
+  prop: "whiteSpace",
   // @ts-ignore
-  cssProperty: 'whiteSpace',
-})
+  cssProperty: "whiteSpace",
+});
 
-export const Text = styled.div<ShadowProps | LayoutProps | SpaceProps | TypographyProps | ColorProps | { as: string, whiteSpace?: string }>`
+export const Text = styled.div<
+  | ShadowProps
+  | LayoutProps
+  | SpaceProps
+  | TypographyProps
+  | ColorProps
+  | { as: string; whiteSpace?: string }
+>`
   ${space};
   ${layout};
   ${color};
   ${typography};
   ${shadow};
   ${whiteSpace};
-`
+`;
 
-Text.displayName = 'Text'
+Text.displayName = "Text";
 
 Text.defaultProps = {
-  as: 'p',
-}
+  as: "p",
+};

@@ -1,10 +1,7 @@
-
-import React, { ComponentType, ReactNode } from "react"
+import React, { ComponentType, ReactNode } from "react";
 
 export const withData = () => (WrappedComponent: ComponentType<ReactNode>) => {
-  const Enchance = (props: any) => (
-    <WrappedComponent {...props} />
-  )
+  const Enchance = (props: any) => <WrappedComponent {...props} />;
 
-  return Enchance
-}
+  return Enchance;
+};

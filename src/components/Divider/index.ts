@@ -1,6 +1,5 @@
-import styled from "styled-components"
-import { display, space, SpaceProps, DisplayProps } from "styled-system"
-
+import styled from "styled-components";
+import { display, space, SpaceProps, DisplayProps } from "styled-system";
 
 export const Divider = styled.hr<DisplayProps | SpaceProps>`
   ${display};
@@ -10,4 +9,4 @@ export const Divider = styled.hr<DisplayProps | SpaceProps>`
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.12);
   border-bottom-width: thin;
-`
+`;

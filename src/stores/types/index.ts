@@ -1,4 +1,3 @@
-
 type WeatherDetail = {
   location: {
     name: string;
@@ -20,16 +19,16 @@ type WeatherDetail = {
     wind: number;
   };
   notes: Array<string>;
-}
+};
 
 export type FavoriteCity = {
-  name: string; 
-  region: string; 
+  name: string;
+  region: string;
   country: string;
   lat?: string;
   lon?: string;
   isFavorite?: boolean;
-}
+};
 
 export interface IWeatherStore {
   cityWeather: WeatherDetail;
@@ -58,10 +57,10 @@ export interface IWeatherStore {
   setSearchResults(searchResults: Array<FavoriteCity>): void;
 }
 
-export type AlertProps = { 
-  content?: any; 
+export type AlertProps = {
+  content?: any;
   status?: "success" | "error";
-}
+};
 
 export type DialogProps = {
   title?: string;

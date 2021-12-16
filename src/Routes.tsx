@@ -3,7 +3,6 @@ import React from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
 import { withLoadRoutes } from "./hoc/withLoadRoutes";
 
-
 const Weather = React.lazy(() => import("./views/Weather"));
 const Favorites = React.lazy(() => import("./views/Favorites"));
 const SearchResult = React.lazy(() => import("./views/SearchResult"));

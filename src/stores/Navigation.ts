@@ -25,7 +25,7 @@ const initialState = {
 export class Navigation extends Store implements INavigationStore {
   static key = "navigation";
   navItems: INavigationStore["navItems"] = initialState.navItems;
-  searchRoute: string = this.navItems[2].to
+  searchRoute: string = this.navItems[2].to;
 
   constructor() {
     super(Navigation.key);

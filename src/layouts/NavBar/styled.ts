@@ -1,14 +1,13 @@
-import styled from "styled-components"
-import { NavLink } from "react-router-dom"
-import { Text } from "../../components/Text"
-import { themeGet } from "../../helpers"
-
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+import { Text } from "../../components/Text";
+import { themeGet } from "../../helpers";
 
 export const Tabs: any = styled.div`
   box-pack: center;
   justify-content: center;
   margin: auto;
-`
+`;
 
 const Tab = styled(NavLink)`
   display: inline-flex;
@@ -54,6 +53,6 @@ const Tab = styled(NavLink)`
   ${Text} {
     color: currentColor;
   }
-`
+`;
 
-Tabs.Tab = Tab
+Tabs.Tab = Tab;

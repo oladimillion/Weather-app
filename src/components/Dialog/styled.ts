@@ -1,7 +1,6 @@
-import styled from "styled-components"
-import { FlexBox } from "../FlexBox"
-import { themeGet } from "../../helpers"
-
+import styled from "styled-components";
+import { FlexBox } from "../FlexBox";
+import { themeGet } from "../../helpers";
 
 export const DialogWrapper: any = styled(FlexBox)`
   background-color: ${themeGet("colors.transparent.grey40")};
@@ -10,4 +9,4 @@ export const DialogWrapper: any = styled(FlexBox)`
   bottom: 0;
   left: 0;
   right: 0;
-`
+`;

@@ -13,9 +13,7 @@
     "weather_icons": [
       "https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png"
     ],
-    "weather_descriptions": [
-      "Sunny"
-    ],
+    "weather_descriptions": ["Sunny"],
     "wind_speed": 17,
     "pressure": 1008,
     "humidity": 9,

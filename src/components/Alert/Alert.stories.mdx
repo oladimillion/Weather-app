@@ -1,5 +1,5 @@
-import { Meta, Story } from '@storybook/addon-docs';
-import { Alert } from '.';
+import { Meta, Story } from "@storybook/addon-docs";
+import { Alert } from ".";
 
 <Meta title="Components/Alert" component={Alert} />
 
@@ -7,8 +7,8 @@ export const Template = (args) => <Alert {...args} />;
 
 <Story
   name="success"
-  args={{ 
-    variant: "success", 
+  args={{
+    variant: "success",
     children: "Success Alert",
     remove: () => {},
   }}
@@ -18,8 +18,8 @@ export const Template = (args) => <Alert {...args} />;
 
 <Story
   name="error"
-  args={{ 
-    variant: "error", 
+  args={{
+    variant: "error",
     children: "Success Error",
     remove: () => {},
   }}

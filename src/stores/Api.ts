@@ -12,9 +12,7 @@ export class Api extends Store {
     return process.env.WEATHER_URI;
   }
 
-  axios = (
-    args = {} as { url: string; method: string; params?: object; }
-  ) => {
+  axios = (args = {} as { url: string; method: string; params?: object }) => {
     // @ts-ignore
     return axios({
       ...args,
@@ -29,5 +27,4 @@ export class Api extends Store {
   get = (url: string, params: object = {}, method = "get" as string) => {
     return this.axios({ method, url, params });
   };
-
 }

@@ -1,65 +1,54 @@
-import React from 'react';
-import { observer } from "mobx-react"
-import { Card } from "../../../components/Card"
-import { FlexBox } from "../../../components/FlexBox"
-import { Text } from "../../../components/Text"
-import { Divider } from "../../../components/Divider"
-import { Image } from "../../../components/Image"
-import { Bookmark } from "../../../components/Bookmark"
-import { Pane } from "../../../components/Pane"
-import { 
-  WeatherKey, 
-  WeatherProperties, 
-  WeatherValue, 
-} from "./styled"
-import { genKeyFromCityDetail as genKey } from "../../../helpers"
-import { WeatherProps } from "../types"
-
+import React from "react";
+import { observer } from "mobx-react";
+import { Card } from "../../../components/Card";
+import { FlexBox } from "../../../components/FlexBox";
+import { Text } from "../../../components/Text";
+import { Divider } from "../../../components/Divider";
+import { Image } from "../../../components/Image";
+import { Bookmark } from "../../../components/Bookmark";
+import { Pane } from "../../../components/Pane";
+import { WeatherKey, WeatherProperties, WeatherValue } from "./styled";
+import { genKeyFromCityDetail as genKey } from "../../../helpers";
+import { WeatherProps } from "../types";
 
 export const DetailComponent = (props: WeatherProps) => {
-
   const { weatherStore } = props;
-  const { 
-    removeFavoriteCity, 
+  const {
+    removeFavoriteCity,
     addFavoriteCity,
-    cityWeather, 
+    cityWeather,
     favCityNames,
     favoriteCities,
-  } = weatherStore
-  const { location, current } = cityWeather
+  } = weatherStore;
+  const { location, current } = cityWeather;
 
   const dateTime = React.useMemo(() => {
-    return new Intl.DateTimeFormat("en", { 
-      year: "numeric", 
-      month: "2-digit", 
-      day: "2-digit", 
-      hour: "numeric", 
-      minute: "numeric", 
-      hour12: true, 
-      timeZone: location?.timezone_id, 
-    }).format(new Date(location.localtime))
-  }, [location])
+    return new Intl.DateTimeFormat("en", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+      timeZone: location?.timezone_id,
+    }).format(new Date(location.localtime));
+  }, [location]);
 
   const marked = React.useMemo(() => {
-    const key = genKey(location || {})
-    const index = favCityNames.indexOf(key)
-    const city = favoriteCities[index]
-    return !!city?.isFavorite
-  }, [favCityNames, favoriteCities]) 
+    const key = genKey(location || {});
+    const index = favCityNames.indexOf(key);
+    const city = favoriteCities[index];
+    return !!city?.isFavorite;
+  }, [favCityNames, favoriteCities]);
 
   return (
-    <Card 
-      minWidth={300} 
-      mx="auto" 
-      borderRadius={1}
-      mb={1}
-    >
+    <Card minWidth={300} mx="auto" borderRadius={1} mb={1}>
       <Card.Content>
         <FlexBox
           justifyContent="space-between"
           flexDirection={["column", "row"]}
         >
-          <FlexBox 
+          <FlexBox
             justifyContent="space-between"
             flexDirection="column"
             mr={[0, 4]}
@@ -71,7 +60,8 @@ export const DetailComponent = (props: WeatherProps) => {
               fontSize={5}
               mb={1}
             >
-              {location.name} {location.region && `(${location.region})`} - {location.country}
+              {location.name} {location.region && `(${location.region})`} -{" "}
+              {location.country}
               <Pane
                 display="inline-block"
                 ml={1}
@@ -100,7 +90,7 @@ export const DetailComponent = (props: WeatherProps) => {
               fontSize={4}
               lineHeight={2}
             >
-              {current?.weather_descriptions?.join(", ")} 
+              {current?.weather_descriptions?.join(", ")}
             </Text>
             <Text
               as="p"
@@ -112,12 +102,9 @@ export const DetailComponent = (props: WeatherProps) => {
               {dateTime}
             </Text>
           </FlexBox>
-          <FlexBox 
-            justifyContent="center"
-            display={["none", "flex"]}
-          >
+          <FlexBox justifyContent="center" display={["none", "flex"]}>
             {current?.weather_icons?.map((icon) => (
-              <Image 
+              <Image
                 key={icon}
                 alt="weather icon"
                 src={icon}
@@ -169,6 +156,6 @@ export const DetailComponent = (props: WeatherProps) => {
       </Card.Content>
     </Card>
   );
-}
+};
 
-export const Detail = observer(DetailComponent)
+export const Detail = observer(DetailComponent);

@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import { FlexBox } from "../FlexBox"
-import { Card } from "../Card"
-import { themeGet } from "../../helpers"
+import styled from "styled-components";
+import { FlexBox } from "../FlexBox";
+import { Card } from "../Card";
+import { themeGet } from "../../helpers";
 
 export const List: any = styled(Card).attrs((props: any) => ({
   as: "ul",
@@ -18,12 +18,12 @@ export const List: any = styled(Card).attrs((props: any) => ({
   min-height: 300px;
   height: calc(100vh - 150px);
   overflow-y: auto;
-`
+`;
 
-export const Header = styled(Card.Header)``
+export const Header = styled(Card.Header)``;
 
 export const Item = styled(FlexBox).attrs((props: any) => ({
-  as: 'li',
+  as: "li",
   ...props,
 }))`
   justify-content: flex-start;
@@ -35,5 +35,4 @@ export const Item = styled(FlexBox).attrs((props: any) => ({
   padding: ${themeGet("space.1")} ${themeGet("space.2")};
   width: 100%;
   max-width: 400px;
-`
-
+`;

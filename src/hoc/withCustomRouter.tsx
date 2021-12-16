@@ -39,9 +39,9 @@ export const withCustomRouter = (WrappedComponent: ComponentType<any>) => {
       history.replace(path);
     };
     const getParams = (key: string, defaultValue = null as string | null) => {
-      const value = get(match.params, key, defaultValue)
-      return value ? decodeURI(value) : value
-    }
+      const value = get(match.params, key, defaultValue);
+      return value ? decodeURI(value) : value;
+    };
     const getQuery = (key: string, defaultValue = null as string | null) =>
       get(queryObj, key, defaultValue);
     const getMode = (defaultValue = "read") => getParams("mode", defaultValue);

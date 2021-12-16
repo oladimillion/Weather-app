@@ -7,4 +7,4 @@ export { withStores } from "./withStores";
 export { withTheme } from "./withTheme";
 export { withLayout } from "./withLayout";
 export { withWeather } from "./withWeather";
-export { withBrowserRouter } from "./withBrowserRouter"
+export { withBrowserRouter } from "./withBrowserRouter";

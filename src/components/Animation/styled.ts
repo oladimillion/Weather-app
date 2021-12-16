@@ -1,8 +1,7 @@
-import styled, { keyframes } from "styled-components"
-import { variant, VariantArgs } from "styled-system"
-import { get } from "lodash"
-import { Pane } from "../Pane"
-
+import styled, { keyframes } from "styled-components";
+import { variant, VariantArgs } from "styled-system";
+import { get } from "lodash";
+import { Pane } from "../Pane";
 
 const fadeInOut = keyframes`
   0% {
@@ -22,8 +21,7 @@ const fadeInOut = keyframes`
     display: none; 
     opacity: 0; 
   }
-`
-
+`;
 
 const modalOpen = keyframes`
   from {
@@ -34,7 +32,7 @@ const modalOpen = keyframes`
     opacity: 1; 
   }
 }
-`
+`;
 
 const modalClose = keyframes`
   from {
@@ -45,22 +43,21 @@ const modalClose = keyframes`
     opacity: 0; 
   }
 }
-`
+`;
 
-
-const getAnimationName = ({ variant }: { variant : string }) => {
+const getAnimationName = ({ variant }: { variant: string }) => {
   const animations = {
-    "alert": fadeInOut,
+    alert: fadeInOut,
     "modal-open": modalOpen,
     "modal-close": modalClose,
-  }
+  };
 
-  return get(animations, variant)
-}
+  return get(animations, variant);
+};
 
 export const AnimationWrapper = styled<VariantArgs | any>(Pane)`
   animation-name: ${getAnimationName};
-  animation-duration: ${({ duration }: { duration : number }) => duration}s;
+  animation-duration: ${({ duration }: { duration: number }) => duration}s;
   animation-fill-mode: forward;
 
   ${variant({
@@ -68,6 +65,6 @@ export const AnimationWrapper = styled<VariantArgs | any>(Pane)`
       alert: {
         animationTimingFunction: "ease-in-out",
       },
-    }
+    },
   })}
-`
+`;

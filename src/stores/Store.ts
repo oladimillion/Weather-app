@@ -16,7 +16,7 @@ export class Store implements IStore {
   }
 
   static getStore = (key: string) => memo[key];
-  
+
   getStore = (key: string) => {
     return Store.getStore(key);
   };

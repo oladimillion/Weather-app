@@ -1,6 +1,6 @@
-import { Meta, Story } from '@storybook/addon-docs';
-import { lorem } from "../utils/lorem"
-import { Text } from '.';
+import { Meta, Story } from "@storybook/addon-docs";
+import { lorem } from "../utils/lorem";
+import { Text } from ".";
 
 <Meta title="Components/Text" component={Text} />
 
@@ -9,7 +9,8 @@ export const Template = (args) => <Text {...args} />;
 <Story
   name="Text"
   args={{
-    children: lorem
-  }}>
+    children: lorem,
+  }}
+>
   {Template.bind({})}
 </Story>

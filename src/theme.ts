@@ -1,9 +1,9 @@
-const breakpoints = ['600px', '840px', '1284px']
+const breakpoints = ["600px", "840px", "1284px"];
 const mediaQueries = {
   small: `@media screen and (max-width: ${breakpoints[0]})`,
   medium: `@media screen and (max-width: ${breakpoints[1]})`,
   large: `@media screen and (max-width: ${breakpoints[2]})`,
-}
+};
 const colors = {
   white: "#fff",
   black: "#000",
@@ -47,7 +47,7 @@ const colors = {
     700: "#616161",
   },
   lightBlue: {
-    50:  "#e1f5fe",
+    50: "#e1f5fe",
     100: "#b3e5fc",
     200: "#81d4fa",
     300: "#4fc3f7",
@@ -59,7 +59,7 @@ const colors = {
     900: "#01579b",
   },
   blueGrey: {
-    50:  "#eceff1",
+    50: "#eceff1",
     100: "#cfd8dc",
     200: "#b0bec5",
     300: "#90a4ae",
@@ -69,13 +69,22 @@ const colors = {
     700: "#455a64",
     800: "#37474f",
     900: "#263238",
-  }
-}
-const fontSizes = ["12px", "14px", "16px", "20px", "24px", "32px", "48px", "64px", "96px"]
-const space = [0, "8px", "16px", "24px", "32px", "64px", "96px"]
-const fontWeights = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900]
-const radii = [0, "4px", "8px", "12px", "16px", "20px"]
-
+  },
+};
+const fontSizes = [
+  "12px",
+  "14px",
+  "16px",
+  "20px",
+  "24px",
+  "32px",
+  "48px",
+  "64px",
+  "96px",
+];
+const space = [0, "8px", "16px", "24px", "32px", "64px", "96px"];
+const fontWeights = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900];
+const radii = [0, "4px", "8px", "12px", "16px", "20px"];
 
 export default {
   breakpoints,
@@ -85,5 +94,4 @@ export default {
   space,
   fontWeights,
   radii,
-}
-
+};

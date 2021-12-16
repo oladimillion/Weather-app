@@ -1,8 +1,8 @@
-import styled from 'styled-components'
-import { 
+import styled from "styled-components";
+import {
   layout,
-  LayoutProps, 
-  space, 
+  LayoutProps,
+  space,
   SpaceProps,
   variant,
   VariantArgs,
@@ -13,11 +13,19 @@ import {
   border,
   BorderProps,
   typography,
-  TypographyProps
-} from 'styled-system'
-import { themeGet } from '../../helpers'
+  TypographyProps,
+} from "styled-system";
+import { themeGet } from "../../helpers";
 
-type ButtonProps = LayoutProps | SpaceProps | VariantArgs | ColorProps | BackgroundProps | BorderProps | TypographyProps | { variant: string}
+type ButtonProps =
+  | LayoutProps
+  | SpaceProps
+  | VariantArgs
+  | ColorProps
+  | BackgroundProps
+  | BorderProps
+  | TypographyProps
+  | { variant: string };
 
 export const Button = styled.button<ButtonProps>`
   cursor: pointer;
@@ -28,7 +36,7 @@ export const Button = styled.button<ButtonProps>`
   padding: ${themeGet("space.1")} ${themeGet("space.2")};
   font-weight: ${themeGet("fontWeights.6")};
   border-radius: ${themeGet("radii.1")};
-  ${space}; 
+  ${space};
   ${layout};
   ${color};
   ${background};
@@ -36,20 +44,20 @@ export const Button = styled.button<ButtonProps>`
   ${typography};
   ${variant({
     variants: {
-      "primary": {
+      primary: {
         backgroundColor: "blue.600",
         color: "white",
       },
-      "secondary": {
+      secondary: {
         backgroundColor: "black",
         color: "white",
       },
-    }
+    },
   })};
-`
+`;
 
-Button.displayName = 'Button'
+Button.displayName = "Button";
 
 Button.defaultProps = {
   type: "button",
-}
+};

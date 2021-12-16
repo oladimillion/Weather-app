@@ -1,12 +1,12 @@
 import React, { ComponentType } from "react";
-import styled from "styled-components"
+import styled from "styled-components";
 import { FlexBox } from "../components/FlexBox";
 import { Text } from "../components/Text";
 import { getDisplayName } from "../helpers";
 
 const Info = styled("i")({
   textDecoration: "underline",
-})
+});
 
 type State = {
   hasError: boolean;

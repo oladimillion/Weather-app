@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import { themeGet } from "../../helpers"
-import { Text } from "../Text"
+import styled from "styled-components";
+import { themeGet } from "../../helpers";
+import { Text } from "../Text";
 
 export const Header = styled(Text).attrs(() => ({
-  as: 'header'
+  as: "header",
 }))`
   line-height: 2.5;
   color: ${themeGet("colors.grey.600")};
@@ -15,4 +15,4 @@ export const Header = styled(Text).attrs(() => ({
   top: 0;
   z-index: 1;
   background-color: ${themeGet("colors.white")};
-`
+`;

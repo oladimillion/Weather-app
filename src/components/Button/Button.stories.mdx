@@ -1,18 +1,14 @@
-import { Meta, Story } from '@storybook/addon-docs';
-import { Button } from '.';
+import { Meta, Story } from "@storybook/addon-docs";
+import { Button } from ".";
 
 <Meta title="Components/Button" component={Button} />
 
 export const Template = (args) => <Button {...args} />;
 
-<Story
-  name="Primary"
-  args={{ variant: "primary", children: "Button" }}>
+<Story name="Primary" args={{ variant: "primary", children: "Button" }}>
   {Template.bind({})}
 </Story>
 
-<Story
-  name="Seconday"
-  args={{ variant: "secondary", children: "Button" }}>
+<Story name="Seconday" args={{ variant: "secondary", children: "Button" }}>
   {Template.bind({})}
 </Story>

@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import { 
-  color, 
-  ColorProps, 
-  typography, 
-  TypographyProps, 
+import styled from "styled-components";
+import {
+  color,
+  ColorProps,
+  typography,
+  TypographyProps,
   space,
   SpaceProps,
   layout,
@@ -16,9 +16,18 @@ import {
   PositionProps,
   shadow,
   ShadowProps,
-} from "styled-system"
+} from "styled-system";
 
-export const Pane = styled.div<ColorProps | TypographyProps | SpaceProps | LayoutProps | BackgroundProps | BorderProps | PositionProps | ShadowProps>`
+export const Pane = styled.div<
+  | ColorProps
+  | TypographyProps
+  | SpaceProps
+  | LayoutProps
+  | BackgroundProps
+  | BorderProps
+  | PositionProps
+  | ShadowProps
+>`
   ${color};
   ${typography};
   ${space};
@@ -27,4 +36,4 @@ export const Pane = styled.div<ColorProps | TypographyProps | SpaceProps | Layou
   ${border};
   ${position};
   ${shadow};
-`
+`;

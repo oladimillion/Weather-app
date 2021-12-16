@@ -1,6 +1,6 @@
 import React from "react";
 import { IWeatherStore } from "../../stores/types";
-import { CityList } from "../../layouts/CityList"
+import { CityList } from "../../layouts/CityList";
 import connect from "./connect";
 
 type Props = {
@@ -9,16 +9,12 @@ type Props = {
 
 const Favorites = (props: Props) => {
   const { weatherStore } = props;
-  const {
-    addFavoriteCity,
-    removeFavoriteCity,
-    favoriteCities,
-  } = weatherStore
+  const { addFavoriteCity, removeFavoriteCity, favoriteCities } = weatherStore;
 
   return (
-    <CityList 
-      title="Favorites" 
-      items={favoriteCities} 
+    <CityList
+      title="Favorites"
+      items={favoriteCities}
       addCity={addFavoriteCity}
       removeCity={removeFavoriteCity}
     />

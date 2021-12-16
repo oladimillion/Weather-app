@@ -1,6 +1,6 @@
-import { Meta, Story } from '@storybook/addon-docs';
-import { Text } from "../Text"
-import { Animation } from '.';
+import { Meta, Story } from "@storybook/addon-docs";
+import { Text } from "../Text";
+import { Animation } from ".";
 
 <Meta title="Components/Animation" component={Animation} />
 
@@ -8,8 +8,8 @@ export const Template = (args) => <Animation {...args} />;
 
 <Story
   name="alert"
-  args={{ 
-    variant: "alert", 
+  args={{
+    variant: "alert",
     children: <Text>Alert</Text>,
     duration: 10,
   }}
@@ -19,8 +19,8 @@ export const Template = (args) => <Animation {...args} />;
 
 <Story
   name="modal-open"
-  args={{ 
-    variant: "modal-open", 
+  args={{
+    variant: "modal-open",
     children: <Text>Modal Open</Text>,
     duration: 2,
   }}
@@ -30,8 +30,8 @@ export const Template = (args) => <Animation {...args} />;
 
 <Story
   name="modal-close"
-  args={{ 
-    variant: "modal-close", 
+  args={{
+    variant: "modal-close",
     children: <Text>Modal Close</Text>,
     duration: 2,
   }}
