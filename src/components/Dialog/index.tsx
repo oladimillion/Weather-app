@@ -54,7 +54,8 @@ export const Dialog = (props: Props) => {
       <DialogWrapper>
         <Pane
           m="auto"
-          width={["90%", "50%"]}
+          width={["90%", "70%", "50%"]}
+          maxWidth="550px"
           borderRadius={1}
           p={3}
           backgroundColor="white"
